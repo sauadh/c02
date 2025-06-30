@@ -1,0 +1,3 @@
+Fixed-point arithmetic stores numbers as integers, but assumes a fixed number of fractional bits. 
+It’s a way to represent real numbers (floats) using integers, especially useful in embedded systems
+ where floating-point operations are costly or unavailable.
