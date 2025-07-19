@@ -33,6 +33,11 @@ Point::~Point()
 
 Point &Point::operator=(const Point &ass)
 {   
+    if (this == &ass)
+    {
+        return *this;
+    }
+    
     return (*this);
 }
 
@@ -48,5 +53,6 @@ const Fixed &Point::getY(void)const
 
 std::ostream  &operator<<(std::ostream &out, Point const &x)
 {
-    o << "x" << x.getX() << "y" << x.getY
+    out << "x" << x.getX() << "y" << x.getY() << std::endl;
+    return (out);
 }
